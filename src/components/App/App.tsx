@@ -4,8 +4,7 @@ import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
 import css from "./App.module.css";
 import { useState } from "react";
-
-export type VoteType = "good" | "neutral" | "bad";
+import type { VoteType } from "../../types/votes";
 
 interface FeedbackState {
   good: number;
