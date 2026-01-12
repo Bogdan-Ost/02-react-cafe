@@ -6,14 +6,10 @@ import css from "./App.module.css";
 import { useState } from "react";
 import type { VoteType } from "../../types/votes";
 
-interface FeedbackState {
-  good: number;
-  neutral: number;
-  bad: number;
-}
+import type { Votes } from "../../types/votes";
 
 export default function App() {
-  const [votes, setVotes] = useState<FeedbackState>({
+  const [votes, setVotes] = useState<Votes>({
     good: 0,
     neutral: 0,
     bad: 0,
